@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -6584,6 +6584,9 @@ button.close {
   td.visible-xs {
     display: table-cell !important;
   }
+}
+body{
+		font-family: 'Covered By Your Grace', cursive;
 }
 @media (max-width: 767px) {
   .visible-xs-block {

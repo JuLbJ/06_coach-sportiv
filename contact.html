@@ -44,60 +44,40 @@
 		<div class="formulaire">
 			<form class="form" action="index.html" method="post">
 				<fieldset>
-					<legend><span class="number">1</span> Your basic info</legend>
 					<label for="name">Name:</label>
 					<input type="text" id="name" name="user_name">
 					<label for="email">Email:</label>
 					<input type="email" id="email" name="user_email">
 					<label for="password">Password:</label>
 					<input type="password" id="password" name="user_password">
-					<label>Age:</label>
-					<input type="radio" id="under_13" value="under_13" name="user_age">
-					<label for="under_13" class="light">Under 13 </label>
-					<br>
-					<input type="radio" id="over_13" value="over_13" name="user_age">
-					<label for="over_13" class="light">13 or older</label>
 				</fieldset>
+
 				<fieldset>
-					<legend><span class="number">2</span> Biography:</legend>
-					<label for="bio">Biography:</label>
+					<label for="bio" class="bio1">What is you background in sport:</label>
+					<br>
 					<textarea id="bio" name="user_bio"></textarea>
-					<label for="job">Job role:</label>
-					<select id="job" name="user_job">
-						<optgroup label="Web">
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
+					<br>
+					<label for="sport">You want to practice:</label>
+					<br>
+					<select id="sport" name="user_sport">
+
+						<optgroup label="Body / Mind">
+							<option value="karate">Karate</option>
+							<option value="karate">Joga</option>
+							<option value="karate">Streching</option>
 						</optgroup>
-						<optgroup label="IT">
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
+						<optgroup label="Body">
+							<option value="body">Children football</option>
+							<option value="body">Sport Street</option>
 						</optgroup>
-						<optgroup label="Handy">
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
-							<option value="fronted_developper">Fron-End Developper</option>
+						<optgroup label="Adrenaline">
+							<option value="adrenaline">Skydiving</option>
 						</optgroup>
 					</select>
-<label>Interests/</label>
-<input type="checkbox" id="development" value="interest_development" name="user_development"><label class="light" for="development">Development</label><br>
-
-<input type="checkbox" id="design" value="interest_design" name="user_design"><label class="light" for="design">Design</label><br>
-
-<input type="checkbox" id="bussiness" value="interest_bussiness" name="user_bussiness"><label class="light" for="bussiness">Bussiness</label>
-
 				</fieldset>
 				<button type="submit">Sign up</button>
-
 			</form>
 		</div>
-
-
-
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		<script>
 			window.jQuery || document.write("<script src="

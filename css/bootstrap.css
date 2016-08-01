@@ -6761,3 +6761,9 @@ body{
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+h3{
+	font-size: 32px;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}

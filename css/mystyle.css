@@ -1,3 +1,36 @@
+/* GENERAL SETTINGS*/
+
+* {
+	list-style: none;
+}
+
+
+/*****************************************************************************/
+
+/*_____________________________ Media queries __________________________________*/
+																								   /*_______Smartphones_______*/
+@media only screen and (max-width: 320px) {
+/*=======Styles go here=======*/
+body{
+	background: #f4f7ed;
+}
+}
+																												/*_______Tablets______*/
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+/*=======Styles go here=======*/
+body{
+	background: #dde8ca;
+}
+}
+																		    				/*_______Medium devices______*/
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
+body{
+	background: #c6d8a6;
+}
+}
+
+
+/*______________index.html ___________________________________________________*/
 body {
     color: #3a3a3a;
     background-image: url("../img/grass02.jpeg");
@@ -20,10 +53,11 @@ ul {
     font-size: 32px;
 }
 .main-nav-calendar {
-    display: flex;
+    display: inline;
+		padding-left: 0;
     font-size: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 ul li {
     padding-left: 130px;
@@ -48,7 +82,7 @@ img {
 }
 .wrapper {
     text-align: center;
-    fixed: bottom;
+
 }
 footer {
     width: 100%;
@@ -69,34 +103,35 @@ footer {
 html {
     height: 100%;
 }
+/*_____________/ index.html __________________________________________________*/
 @media (min-width: 769px) {
     .wrap {
         min-height: calc(100vh - 60px);
-        ;
     }
     .container {
         width: 70%;
         max-width: 1000px;
         margin: 0 auto;
     }
-}
+		.main-nav-calendar li {
+			display:  inline;
 
-/*============================================================================*/
+
+		}
+}
+/*_______ calendar.html ______________________________________________________*/
 
 ul {
     list-style-type: none;
 }
 
 /* Month header */
-
 .month {
     padding: 30px 30px;
     width: 100%;
     background: #8eff2c;
 }
-
 /* Month list */
-
 .month ul {
     margin: 0;
     padding: 0;
@@ -106,29 +141,22 @@ ul {
     font-size: 34px;
     letter-spacing: 10px;
 }
-
 /* Previous button inside month header */
-
 .month .prev {
     float: left;
     padding-top: 10px;
 }
-
 /* Next button */
-
 .month .next {
     float: right;
     padding-top: 10px;
 }
-
 /* Weekdays (Mon-Sun) */
-
 .weekdays {
     margin: 0;
     background-color: #ddd;
 		height: 63px;
 		padding-top: 10px;
-
 }
 .weekdays li {
     display: inline-block;
@@ -137,12 +165,9 @@ ul {
     color: #337ab7;
     text-align: center;
     font-size: 24px;
-			text-align: justify;
+		text-align: justify;
 }
-
-
 /* Days (1-31) */
-
 .days {
     background: #eee;
     margin: 0;
@@ -157,9 +182,7 @@ ul {
     text-align: center;
     font-size: 24px;
 }
-
 /* Highlight the "current" day */
-
 .days li .active {
     padding: 5px;
     background: #1abc9c;
@@ -169,3 +192,59 @@ ul {
     text-align: center;
     font-weight: 600;
 }
+/*________/ calendar.html ____________________________________________________*/
+
+/*________ reception _________________________________________________________*/
+
+
+
+/*____________________________________________________________carousel_______*/
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.text{
+	font-size: 32px;
+	margin-left: 20px;
+}
+.item-active{
+	min-height: 600px;
+}
+
+img{
+	min-height: 300px;
+	min-width: 517px;
+}
+h3{
+	font-weight: bold;
+}
+/*___________________________________________________________/ carousel_______*/
+/*________/ reception ________________________________________________________*/
+
+.formulaire{
+	padding-top: 25px;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 26px;
+	font-weight: 400;
+}
+.form{
+	display: list-item;
+	}
+.formulaire legend{
+	font-size: 36px;
+	font-weight: 400;
+}
+#bio{
+	min-width: 600px;
+	text-align: center;
+}
+label{
+	margin-top: 20px;
+}
+#sport{
+	margin-bottom: 30px;
+}
+
+/*__________contact __________________________________________________________*/
